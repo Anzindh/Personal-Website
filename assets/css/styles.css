@@ -159,12 +159,12 @@ body.light-theme{
 {
   background-color: gold;
   box-shadow: inset 0 -160px gold ;
-  opacity: .7;
+  opacity: 1;
 }
 
 .light-theme .home__greeting,
 .light-theme .home__name{
-  color: brown;
+  color: hsl(var(--first-hue), 60%, 65%);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -278,7 +278,7 @@ body.light-theme{
 
 .home__data{
   text-align: center;
-  margin-top: -19rem;
+
 }
 
 .home__greeting,
@@ -289,7 +289,6 @@ body.light-theme{
 
 .home__greeting{
   color: var(--title-color);
-  padding-bottom: 10rem;
 }
 
 
@@ -310,12 +309,14 @@ body.light-theme{
 
 /* Animation */
 .home__handle{
-  margin-top: 25rem;
+  margin-top: 7rem;
   align-items: flex-end;
   justify-content: center;
-  overflow: hidden;
+  transform: scale(0.6, 0.6);
+  margin-bottom: 15rem;
+  }
 
-}
+
 
 .scene {
   width: 500px;
@@ -841,6 +842,7 @@ body.light-theme{
 
 .about__container{
   row-gap: 2.5rem;
+;
 }
 
 .about__img{
