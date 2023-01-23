@@ -18,7 +18,7 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -30,7 +30,14 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">Anzindh</a>
+
+        <!-- Theme change button  -->
+
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+      </nav>
         
+      <div class="nav__menu-container">
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
@@ -64,10 +71,9 @@
             </li>
           </ul>
         </div>
-        <!-- Theme change button  -->
+        </div>
 
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
-      </nav>
+     
     </header>
 
     <!--=============== MAIN ===============-->
@@ -300,6 +306,8 @@
                                   <i class='bx bx-checkbox-square'></i>
                                   <i class='bx bx-checkbox-square'></i>
                                   <i class='bx bx-checkbox-square'></i>
+                                  <i class='bx bx-checkbox-square'></i>
+                                  <i class='bx bx-checkbox-square'></i>
                                 </span>
                               </div>
                             </div>
@@ -393,48 +401,52 @@
       <!--=============== SERVICES ===============-->
       <section class="services section"></section>
 
-      <!--=============== WORK ===============-->
+
+      <!--=============== WORK==================-->
       <section class="work section" id="work">
-        <span class="section__subtitle">
+        <span class="section__subtitle">Projects</span>
           <h2 class="section__title">Recent Works</h2>
-          <div class="work__filters">
-            <span class="work__item active-work">All</span>
-            <span class="work__item">Back End</span>
-            <span class="work__item">Front End</span>
+
+          <div class="work__container container swiper">
+          <div class="swiper-wrapper">
+
+            <div class="work__card swiper-slide">
+              <img src="assets/img/website.jpg " alt="" class="work__img">
+              <h3 class="work__name">website</h3>
+              <a href="" class="work__link">See project</a>
+              <p class="work__description">This is a django project</p>
+            </div>
+
+            <div class="work__card swiper-slide">
+              <img src="assets/img/website.jpg " alt="" class="work__img">
+              <h3 class="work__name">website</h3>
+              <a href="" class="work__link">See project</a>
+              <p class="work__description">This is a django project</p>
+            </div>
+
+            <div class="work__card swiper-slide">
+              <img src="assets/img/website.jpg " alt="" class="work__img">
+              <h3 class="work__name">website</h3>
+              <a href="" class="work__link">See project</a>
+              <p class="work__description">This is a django project</p>
+            </div>
+
+            <div class="work__card swiper-slide">
+              <img src="assets/img/website.jpg " alt="" class="work__img">
+              <h3 class="work__name">website</h3>
+              <a href="" class="work__link">See project</a>
+              <p class="work__description">This is a django project</p>
+            </div>
+
+
+
+
           </div>
-
-          <div class="work__container  grid">
-            <div class="work__card">
-              <img src="assets/img/work1.jpg" alt="" class="work__img">
-              <h3 class="work__title"></h3>
-                <a href="" class="work__button"> Demo <i class='bx bx-right-arrow work__icon' ></i></a>
-            </div>
-
-            <div class="work__card">
-              <img src="assets/img/work1.jpg" alt="" class="work__img">
-              <h3 class="work__title">Web Design</h3>
-                <a href="" class="work__button"> Demo <i class='bx bx-right-arrow work__icon' ></i></a>
-            </div>
-
-            <div class="work__card">
-              <img src="assets/img/work1.jpg" alt="" class="work__img">
-              <h3 class="work__title">App</h3>
-                <a href="" class="work__button"> Demo <i class='bx bx-right-arrow work__icon' ></i></a>
-            </div>
-
-            <div class="work__card">
-              <img src="assets/img/work1.jpg" alt="" class="work__img">
-              <h3 class="work__title">Brand Design</h3>
-                <a href="" class="work__button"> Demo <i class='bx bx-right-arrow work__icon' ></i></a>
-            </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
           </div>
-
-          
-        </span>
       </section>
-
-      <!--=============== TESTIMONIALS ===============-->
-      <section class="testimonial section"></section>
 
       <!--=============== CONTACT ===============-->
       <section class="contact section" id="contact">
@@ -491,7 +503,7 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src=""></script>
