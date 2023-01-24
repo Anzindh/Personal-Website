@@ -877,10 +877,10 @@ body.light-theme{
   margin-bottom: 2rem;
 }
 
-.img{
+/* .img{
   max-width: 100%;
   height:auto;
-}
+} */
 
 .about__card{
   margin-inline: 1.5rem;
@@ -890,8 +890,8 @@ body.light-theme{
 
 .card{
   position: relative;
-  width: 290px;
-  background: linear-gradient(hsl(var(--first-hue), 30%, 50%),black);
+  width: 350px;
+  background: linear-gradient(hsl(var(--first-hue), 30%, 60%),var(--body-color));
   border-radius: 1rem 1rem 11rem 11rem;
   padding: 2.5rem 1.5rem 3.5rem;
   text-align: center;
@@ -927,7 +927,7 @@ body.light-theme{
 
 .card__name,
 .card__profession{
-  color: var(--text-color-light);
+  color: var(--text-color-);
 }
 
 .card__name{
@@ -951,7 +951,7 @@ body.light-theme{
   background-color: hsl(var(--first-hue), 30%, 65%);
   padding: 2.5rem 1.5rem 3.3rem;
   border-radius: 1rem 1rem 11rem 11rem;
-  clip-path: circle(16px at 250px 40px);
+  clip-path: circle(16px at 310px 40px);
   transition: clip-path .4s ease-in-out;
 }
 
