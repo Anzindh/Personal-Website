@@ -7,14 +7,7 @@
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
+
   --first-hue: 250;
   --sat: 66%;
   --lig: 75%;
@@ -154,7 +147,8 @@ body.light-theme{
 
 
 .light-theme #theme-button{
-  color: #FFC72C;
+  color: #FF8C00;
+  font-weight:500;
 }
 .light-theme .star,
 .light-theme .crater2{
@@ -174,6 +168,10 @@ body.light-theme{
 
 .light-theme .home__name{
   color: hsl(var(--first-hue), 90%, 70%);
+}
+
+.light-theme .info{
+  background-color: hsl(var(--first-hue), 20%, 75%);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -298,13 +296,14 @@ body.light-theme{
 .home__greeting{
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
-  color: hsl(var(--first-hue), 40%, 37%) ;
+  /* color: hsl(var(--first-hue), 40%, 37%) ; */
+  color: var(--first-color);
 }
 
 
 .home__name{
   font-size: var(--biggest-font-size);
-  color: hsl(var(--first-hue), 40%, 50%);
+  color: var(--first-color);
 }
 
 .home__name::before{
@@ -877,10 +876,6 @@ body.light-theme{
   margin-bottom: 2rem;
 }
 
-/* .img{
-  max-width: 100%;
-  height:auto;
-} */
 
 .about__card{
   margin-inline: 1.5rem;
@@ -1150,7 +1145,6 @@ body.light-theme{
 .work__card{
   background-color: var(--container-color);
   padding: 1.25rem;
-  /* border-radius: 1rem; */
   margin-bottom: 3rem;
   position: relative;
   text-align: center;
@@ -1290,11 +1284,18 @@ body.light-theme{
 }
 
 .footer__social-link{
-  /* background-color: var(--body-color); */
   padding: .25rem;
   border-radius: .25rem;
   font-size: 2rem;
   display: inline-flex;
+}
+
+.footer__copy{
+  display: block;
+  margin-top: 4rem;
+  color: var(--container-color);
+  text-align: center;
+  font-size: var(--smaller-font-size);
 }
 
 

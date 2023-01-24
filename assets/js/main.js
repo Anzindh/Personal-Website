@@ -25,6 +25,25 @@ let swiperWork = new Swiper(".work__container", {
 });
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
+const sections = document.querySelectorAll('section[id]')
+    
+const scrollActive = () =>{
+  	const scrollY = window.pageYOffset
+
+	sections.forEach(current =>{
+		const sectionHeight = current.offsetHeight,
+			  sectionTop = current.offsetTop - 58,
+			  sectionId = current.getAttribute('id'),
+			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+			sectionsClass.classList.add('active-link')
+		}else{
+			sectionsClass.classList.remove('active-link')
+		}                                                    
+	})
+}
+window.addEventListener('scroll', scrollActive)
 
 /*=============== LIGHT DARK THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
@@ -66,5 +85,5 @@ const sr= ScrollReveal({
   reset: true
 })
 
-sr.reveal('.home__data', {origin:'top',delay:1000})
-sr.reveal('.nav__menu', {origin:'bottom'})
+sr.reveal('.home__data', {origin:'top'})
+sr.reveal('.nav__menu', {origin:'bottom',delay:100})
