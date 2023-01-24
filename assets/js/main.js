@@ -7,13 +7,6 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SERVICES MODAL ===============*/
-
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
-
-/* Link active work */ 
 
 
 /*=============== SWIPER WORK ===============*/
@@ -65,4 +58,13 @@ themeButton.addEventListener('click', () => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr= ScrollReveal({
+  origin:top,
+  distance:'60px',
+  duration:2500,
+  delay:400,
+  reset: true
+})
 
+sr.reveal('.home__data', {origin:'top',delay:1000})
+sr.reveal('.nav__menu', {origin:'bottom'})
