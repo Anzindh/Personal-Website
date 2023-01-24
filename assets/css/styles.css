@@ -151,6 +151,10 @@ body.light-theme{
   box-shadow: 0 2px 16px hsla(var(--second-hue), 58%, 8%, .2);
 }
 
+
+.light-theme #theme-button{
+  color: #FFC72C;
+}
 .light-theme .star,
 .light-theme .crater2{
   opacity: 0;
