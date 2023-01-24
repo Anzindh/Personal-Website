@@ -134,9 +134,6 @@ body.light-theme{
   background-color: hsla(var(--second-hue), 32%, 90% ,  .8);
 }
 
-.light-theme .section__subtitle{
-  color: var(--text-color);
-}
 
 .light-theme .work__card,
 .light-theme .skills__content,
@@ -207,8 +204,8 @@ body.light-theme{
 
 .section__subtitle {
   display: block;
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
 }
 
 /*=============== HEADER & NAV===============*/
@@ -294,10 +291,9 @@ body.light-theme{
 }
 
 .home__greeting{
-  font-size: var(--small-font-size);
+  font-size: var(--medium-font-size);
   font-weight: var(--font-medium);
-  /* color: hsl(var(--first-hue), 40%, 37%) ; */
-  color: var(--first-color);
+  color: hsl(var(--first-hue), 40%, 37%) ;
 }
 
 
