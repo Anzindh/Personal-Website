@@ -1040,7 +1040,7 @@ body.light-theme{
 .about__box{
   background-color: var(--container-color);
   border-radius: .75rem;
-  padding: 5rem .5rem;
+  padding: 5rem 2rem;
 }
 
 .about__box-icon{
