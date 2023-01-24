@@ -147,6 +147,7 @@ body.light-theme{
 
 .light-theme .work__card,
 .light-theme .skills__content,
+.light-theme .about__box,
 .light-theme .contact__card{
   box-shadow: 0 2px 16px hsla(var(--second-hue), 58%, 8%, .2);
 }
@@ -1048,13 +1049,13 @@ body.light-theme{
 .about__box{
   background-color: var(--container-color);
   border-radius: .75rem;
-  padding: .75rem .5rem;
+  padding: 5rem .5rem;
 }
 
 .about__box-icon{
   font-size: 2.5rem;
   color: var(--first-color);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .about__title{
